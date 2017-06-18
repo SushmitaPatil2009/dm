@@ -1,0 +1,233 @@
+﻿
+.Textbox
+{
+    font-family:Calibri;
+    font-size: small;
+    width: 513px;
+    height: 25px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.Label
+{
+   color: #363636;
+	font-size: 15px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	font-family: Calibri;
+	font-size: 15px; 
+	font-family: Calibri;   
+	
+	 text-transform: none;
+}
+.TextArea
+{
+    font-family:Calibri;
+    font-size: 12px;
+    width: 513px;
+    height: 50px;
+    text-transform: uppercase;
+}
+.Button
+{
+    font-family: Calibri;
+    font-size: 12px;
+    width: 75px;
+    font-family: Calibri;
+	font-size: 20px; 
+	font-family: Calibri;   
+	font-variant: small-caps;
+	 text-transform: none;
+}
+.CheckBox
+{
+   font-family:Calibri;
+   font-size: 12px;
+   height: 24px;
+   width: 29px;
+   text-transform: uppercase;
+   font-family: Calibri;
+	font-size: 20px; 
+	font-family: Calibri;   
+	font-variant: small-caps;
+	 text-transform: none;
+}
+.DropDownNew
+{
+    font-family:Calibri;
+    font-size: 12px;
+    width: 513px;
+    height: 25px;
+    text-transform: uppercase;
+    font-family: Calibri;
+	font-size: 20px; 
+	font-family: Calibri;   
+	
+	
+}
+.ListboxStyle
+{
+    font-family:Calibri;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-family: Calibri;
+	font-size: 20px; 
+	font-family: Calibri;   
+	
+}
+
+.TableCell
+{
+    text-align:Right;
+    vertical-align:middle;
+}
+.form-control:focus
+{
+    border-color: #00CC99;
+}
+.form-control
+{
+    padding: 05px 0px;
+	font-family: Calibri;
+	margin-left:5px;
+	margin-bottom:5px;
+	height:33px;
+	border: 1px solid rgba(192, 192, 192, 0.61);
+	color: #626262;
+	background: #FFF;
+	float: left;
+	outline: none;
+	font-size: 15px;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
+	-o-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+font-family: Calibri;
+	font-size: 20px; 
+	font-family: Calibri;   
+	font-variant: small-caps;
+
+
+}
+
+.form-control_DDL
+{
+    padding: 0px 0px;
+    margin-left:5px;
+	margin-bottom:5px;
+    font-family: Calibri;
+    display : block;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 5px;
+    line-height: 1.42857;
+    color: #555;
+    vertical-align: middle;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    font-family: Calibri;
+	font-size: 15px; 
+	font-family: Calibri;   
+	
+ }
+ select:disabled
+ {
+    background: #EBEBE4;
+ }
+ textbox:disabled
+ {
+     background: #EBEBE4;
+ }
+ input[readonly] 
+ { 
+    background: #EBEBE4;
+ }
+ 
+ .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary 
+        {
+            font-family: Calibri;
+            font-size: 20px;
+            width:100px;
+            height:35px;
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+        
+        
+        
+/*      NEW CSS      */
+
+/*######## Smart Green ########*/
+.smart-green 
+{
+    margin-top:2%;
+    background: #F8F8F8;
+    padding: 10px 30px 20px 30px;
+    font: 12px Calibri;
+    color: #666;
+    border-radius: 5px;
+    box-shadow:0 0 15px rgba(14,41,57,0.12),0 2px 5px rgba(14,41,57,0.44),inset 0 -1px 2px rgba(14,41,57,0.15);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+       /* width:900px;
+        height:Auto;
+        box-shadow:0 0 15px rgba(14,41,57,0.12),0 2px 5px rgba(14,41,57,0.44),inset 0 -1px 2px rgba(14,41,57,0.15);
+        float:left;
+        padding: 10px 30px 20px 30px;
+        margin-top:2%;
+        margin-left:15%;
+        margin-right:15%;
+        border-radius:5px */
+}
+.smart-green h1 {
+    font: 24px Calibri;
+    padding: 10px 0px 10px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #9DC45F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}

@@ -1,0 +1,67 @@
+
+
+  <meta charset="UTF-8">
+  <title>School Management</title>   
+      <link rel="stylesheet" href="../styles/schoolReg.css"> 
+
+
+<script src="../asstes/js/angular.min.js"></script>
+
+<div ng-controller="schoolRegController">    	
+  <div class="wrapper">   
+	<div class="container">	
+           <h1>SCHOOL REGISTRATION</h1>
+        
+            <div class="form-group">                            
+                            <label class="checkbox-inline">
+                                <input type="checkbox" ng-model="schoolType" >
+                               Primary
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" ng-model="schoolType" >
+                               High School
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" ng-model="schoolType" >
+                                College
+                            </label>
+                  <label class="checkbox-inline">
+                                <input type="checkbox" ng-model="schoolType" >
+                                All
+                            </label>
+                        </div>      
+        
+		<form class="form"> 	
+              
+        School Name <input type="text" placeholder="School Name" ng-model="schoolName" 
+                           ng-maxlength="50" ng-minlength="5"  required>
+        School Code <input type="text" placeholder="School Code"  ng-model="schoolCode"  maxlength="50" ng-maxlength="50" ng-minlength="5"  required>
+        Address <input type="text" placeholder="Address"  ng-model="addressLine1"   ng-maxlength="50" ng-minlength="1"  required>
+             Address <input type="text" placeholder="Address"  ng-model="addressLine2"   ng-maxlength="50" ng-minlength="1"  required>
+        Town <input type="text" placeholder="Town"  ng-model="town"  ng-maxlength="50" ng-minlength="1"  required>
+        Taluk <input type="text" placeholder="Taluk"  ng-model="taluk"  ng-maxlength="50" ng-minlength="1"  required>
+        District <input type="text" placeholder="District"  ng-model="district"  ng-maxlength="50" ng-minlength="1"  required>
+            State <input type="text" placeholder="State"  ng-model="state" ng-maxlength="50" ng-  required>
+            PIN Code <input type="number" placeholder="PIN Code" ng-model="pinCode" ng-maxlength="6" ng-minlength="6"  required >
+            			<br/>
+			<button type="submit" id="signupButton"  ng-click="signUp()">Submit</button>
+            
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+      
+</div>
+

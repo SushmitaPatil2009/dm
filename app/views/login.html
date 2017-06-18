@@ -1,10 +1,50 @@
-<h1>{{message}}</h1>
-<div bgcolor = "red">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="userName" required>
-<br><br/>
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="passWord" required>
-<br/><br/>
-    <button type="submit">Login</button>
+
+
+  <meta charset="UTF-8">
+  <title>School Management</title>   
+      <link rel="stylesheet" href="styles/style_login.css">  
+<div class="systemdt">
+    <p>
+<script> document.write(new Date().toLocaleDateString()); </script>
+</p>
+    </div>
+<div ng-controller="loginController">
+    
+  <div class="wrapper">
+	<div class="container">
+		<h1>Log-In</h1>
+		
+		<form class="form">
+           <select ng-model-options="roleId"   Class="form-control" style="text-align:center;">
+                            <option Value="0" >ADMINISTRATOR</option>
+                            <option Value="1">STAFF</option>
+                            <option Value="2">STUDENT</option>
+                        </select>
+			<input type="text" placeholder="User Name" ng-model="userId" required  MaxLength="10">
+			<input type="password" placeholder="Password" ng-model="passWord"  required MaxLength="10">
+			<button type="submit" id="loginButton"  ng-click="login()">Login</button>
+            
+            <button type="submit" id="signupButton"  ng-click="signup()"><a href="#!/schoolReg" class="btn btn-link">Register</a></button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 </div>
+        
+<div class="movetextleft">
+    <meta http-equiv="refresh" content="40">
+<span class="moveright">Hi This is Test</span>
+</div>
+</div>
+
