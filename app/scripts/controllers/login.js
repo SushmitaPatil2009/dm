@@ -1,14 +1,14 @@
     
  "use strict";
-app.controller("loginController", ['$scope','$http',function ($scope,$http) {
+app.controller("loginController", ['$scope','$http','$location',function ($scope,$http,$location) {
             $scope.message = "Hey done with integration with angular.";
         var loginUrl = "http://localhost:8080/SM/api/v1/login";
-       var signupUrl="http://localhost:8080/SM/api/v1/schoolReg"
+       
         $scope.login = function(){
             var jsonObject = {
-                userId: "sushmita",
-                passWord: "patil",
-                roleId: 1
+                userId: $scope.userId,
+                passWord: $scope.passWord,
+                roleId: $scope.roleId
             };
 
             $http({
@@ -17,12 +17,17 @@ app.controller("loginController", ['$scope','$http',function ($scope,$http) {
                 headers :{ 'Content-Type':'application/json'},
                 data : angular.toJson(jsonObject)
             }).then(function(response){
-                $scope.message = response.message;
+                $scope.message = response.data;
+             console.log("message ",$scope.message);
+                if  ($scope.message.code == 200){
+                      $location.path("/dashBoard");
+                }
             },
-            function(response){
-             $scope.error = response.error;   
+            function(response){               
+             $scope.error = response.data.message;   
+             console.log("response.error ",$scope.error);
+             alert($scope.error ,".Please enter correct input");
             })
                 
              }
-        $scope.signup=function(){$window.location.href='http://localhost:8008/?#!/schoolReg';}
         }]);

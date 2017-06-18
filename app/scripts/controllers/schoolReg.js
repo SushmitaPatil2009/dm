@@ -1,10 +1,13 @@
     
  "use strict";
-app.controller("schoolReg", ['$scope','$http',function ($scope,$http) {
+app.controller("schoolRegController", ['$scope','$http',function ($scope,$http) {
             $scope.message = "Hey done with integration with angular.";
         var signupUrl = "http://localhost:8008/?#!/schoolreg";
        
         $scope.signUp = function(){
+            
+            if($scope.checkvalidation==true)
+                {
             var jsonObject = {
                              
                 schoolName: "schoolName",
@@ -30,7 +33,7 @@ app.controller("schoolReg", ['$scope','$http',function ($scope,$http) {
             function(response){
              $scope.error = response.error;   
             })
-                
+                }
              }
         $scope.checkvalidation = function () {
 if ($scope.sta == true && $scope.stp == true && $scope.sth==true && $scope.stc==true)
@@ -41,6 +44,8 @@ else if ($scope.sta == true && ($scope.stp == true || $scope.sth==true || $scope
 $scope.validationmsg = false;
     else
         $scope.validationmsg = true;
+            
+            return $scope.validationmsg;
 }
 
                                        
