@@ -27,20 +27,16 @@
 
                             <div class="checkbox">
                                 <label>
-                                    <input name="schoolTypeP" type="checkbox" ng-model="stp" class="ace ace-checkbox-2" tabindex="1" ng-change="checkvalidation()"/>
+                                    <input name="schoolTypeH" type="radio" class="ace input-lg" name="schoolTypeP"  ng-model="stp" tabindex="1" />
                                     <span class="lbl"> Primary</span>
                                 </label>
                                 <label>
-                                    <input name="schoolTypeH"  type="checkbox" ng-model="sth" class="ace ace-checkbox-2" tabindex="2" ng-change="checkvalidation()"/>
+                                    <input name="schoolTypeH"  type="radio" ng-model="sth" class="ace input-lg" tabindex="2" />
                                     <span class="lbl"> High School</span>
-                                </label>
+                                </label>                              
                                 <label>
-                                    <input name="schoolTypeC" type="checkbox" ng-model="stc" class="ace ace-checkbox-2" tabindex="3" ng-change="checkvalidation()"/>
-                                    <span class="lbl"> College</span>
-                                </label>
-                                <label>
-                                    <input name="schoolTypeA" type="checkbox" ng-model="sta" class="ace ace-checkbox-2" tabindex="4" ng-change="checkvalidation()"/>
-                                    <span class="lbl"> All</span>
+                                    <input name="schoolTypeH" type="radio" ng-model="sta" class="ace input-lg" tabindex="3"/>
+                                    <span class="lbl"> Both</span>
                                 </label>
                             </div>
 

@@ -4,6 +4,7 @@ app.controller("loginController", ['$scope','$http','$location',function ($scope
             $scope.message = "Hey done with integration with angular.";
         var loginUrl = "http://localhost:8080/SM/api/v1/login";
        
+    if($scope.userId!="" && $scope.passWord!="") (
         $scope.login = function(){
             var jsonObject = {
                 userId: $scope.userId,
@@ -29,5 +30,9 @@ app.controller("loginController", ['$scope','$http','$location',function ($scope
              alert($scope.error ,".Please enter correct input");
             })
                 
-             }
+             })
+        
+        $scope.signUp=function(){
+             $location.path("/schoolReg");
+        }
         }]);
