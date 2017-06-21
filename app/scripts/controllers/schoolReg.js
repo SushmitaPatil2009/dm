@@ -6,8 +6,7 @@ app.controller("schoolRegController", ['$scope','$http','$location',function ($s
         $scope.signUp = function(){
             console.log("Hi");
             
-            var jsonObject = {
-                             
+            var jsonObject = {          
                 schoolName: $scope.schoolName,
                 schoolCode: $scope.schoolCode,
                 addressLine1: $scope.addressLine1,
@@ -17,7 +16,7 @@ app.controller("schoolRegController", ['$scope','$http','$location',function ($s
                 district: $scope.district,
                 state: $scope.state,
                 pinCode: $scope.pinCode,
-                schoolType: 1
+                schoolType: $scope.schoolType
             };
 
             $http({
