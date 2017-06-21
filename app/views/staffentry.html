@@ -18,13 +18,13 @@
                                     First Name
                                 </td>
                                 <td class="input-icon input-icon-right width45">
-                                    <input type="text" id="Text3" />
+                                    <input type="text" placeholder="Employee Name" id="employeeName" ng-model="employeeName" />
                                 </td>
                                 <td class="input-icon ">
                                     Last Name
                                 </td>
                                 <td class="input-icon input-icon-right width45">
-                                    <input type="text" id="Text8" />
+                                    <input type="text" placeholder="Last Name" id="lastName" ng-model="lastName" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
@@ -32,13 +32,13 @@
                                   Father Name
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text1" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>                                
                                 <td class="input-icon">
                                     Mother Name
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text7" />
+                                    <input type="text" placeholder="Mother Name" id="motherName" ng-model="motherName" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
@@ -46,13 +46,13 @@
                                     DOB
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text4" />
+                                    <input type="text" placeholder="DOB" id="dob" ng-model="dob" />
                                 </td>
                                 <td class="input-icon">
                                     Gender
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text5" />
+                                    <input type="text" placeholder="Gender" id="gender" ng-model="gender" />
                                 </td>
                             </tr>
                             
@@ -61,7 +61,7 @@
                                     Blood Group
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <select class="form-control" id="form-field-select-1">
+                                    <select class="form-control" placeholder="Blood Group" id="bloodGroup" ng-model="bloodGroup">
                                         <option value=""></option>
                                     </select>
                                 </td>
@@ -69,21 +69,21 @@
                                     Hieght
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text10" />
+                                    <input type="text" placeholder="Hieght" id="height" ng-model="height" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
                                 <td class="input-icon">
-                                    Cast
+                                    Caste
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Caste" id="caste" ng-model="caste" />
                                 </td>
                                 <td class="input-icon">
                                     Sub Cast
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Sub Caste" id="subCaste" ng-model="subCaste" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -91,13 +91,13 @@
                                     Aadhar No
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Adhar No" id="adharId" ng-model="adharId" />
                                 </td>
                                 <td class="input-icon">
                                     PAN No
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" id="panNumber" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -105,27 +105,27 @@
                                     Is Physically Disabel
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="is Physically Diasbled" id="isPhysicallyDiasbled" ng-model="isPhysicallyDiasbled" />
                                 </td>
                                 <td class="input-icon">
                                     Identification Mark
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="identificationMark" ng-model="identificationMark" />
                                 </td>
                             </tr>
-                             <tr class="col-sm-9">
+                          <!--   <tr class="col-sm-9">
                                 <td class="input-icon">
                                     Marital Status
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Spouse Name
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -133,13 +133,13 @@
                                     	Spouse is Employeed 
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Spouse Pay
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -147,15 +147,15 @@
                                     	is Spouse Health  Scheme
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Spouse Employeement Detail
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
-                            </tr>
+                            </tr>-->
                         </table>
                     
                     
@@ -183,13 +183,13 @@
                                    Qualification
                                 </td>
                                 <td class="input-icon input-icon-right width45">
-                                    <input type="text" id="Text3" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon ">
                                    Year Of Passing
                                 </td>
                                 <td class="input-icon input-icon-right width45">
-                                    <input type="text" id="Text8" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
@@ -197,13 +197,13 @@
                                   Academic Group
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text1" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>                                
                                 <td class="input-icon">
                                     Designation
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text7" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
@@ -211,13 +211,13 @@
                                    Subject Name
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text4" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                    Appointment Date
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text5" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                             
@@ -226,13 +226,13 @@
                                     DOJ Current Post
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                     <input type="text" id="Text10" />
+                                     <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Date Of Retirement
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text10" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                             <tr class="col-sm-9">
@@ -240,13 +240,13 @@
                                     Employee Group
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Grade Pay
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -254,13 +254,13 @@
                                     Service Type
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                    Vacancy Status
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>
                              <tr class="col-sm-9">
@@ -268,13 +268,13 @@
                                     Do Next Increment
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text11" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                                 <td class="input-icon">
                                     Amount Of Increment
                                 </td>
                                 <td class="input-icon input-icon-right">
-                                    <input type="text" id="Text12" />
+                                    <input type="text" placeholder="Father Name" id="fatherName" ng-model="fatherName" />
                                 </td>
                             </tr>                             
                         </table>
