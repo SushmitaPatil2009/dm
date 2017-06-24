@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('../styles/fontsStyle1.css');
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

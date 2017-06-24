@@ -16,7 +16,7 @@
 		
 		<form class="form">
            <select ng-model-options="roleId"   Class="form-control" style="text-align:center;">
-                            <option Value="0" >ADMINISTRATOR</option>
+                            <option Value="0" selected >ADMINISTRATOR</option>
                             <option Value="1">STAFF</option>
                             <option Value="2">STUDENT</option>
                         </select>
@@ -26,6 +26,7 @@
             
             <button type="submit" id="signUpButton"  ng-click="signUp()">SignUp</button>
 		</form>
+        <label ng-model="error" style="color:red"/>
 	</div>
 	
 	<ul class="bg-bubbles">

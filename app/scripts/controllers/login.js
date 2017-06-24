@@ -2,7 +2,7 @@
  "use strict";
 app.controller("loginController", ['$scope','$http','$location',function ($scope,$http,$location) {
             $scope.message = "Hey done with integration with angular.";
-        var loginUrl = "http://localhost:8080/SM/api/v1/login";
+        var loginUrl = "http://localhost:8008/?#!/login";
        
    if($scope.userId!='' && $scope.passWord!=''){
         $scope.login = function(){
