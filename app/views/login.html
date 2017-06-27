@@ -15,17 +15,15 @@
 		<h1>Log-In</h1>
 		
 		<form class="form">
-           <select ng-model="roleId"   Class="form-control" style="text-align:center;">
-                            <option Value="1" >ADMINISTRATOR</option>
-                            <option Value="2">STAFF</option>
-                            <option Value="3">STUDENT</option>
-                        </select>
+            <select id="roleId" Class="form-control" style="text-align:center;" data-ng-options="o.name for o in roleItemlist track by o.id" data-ng-model="roleId"></select>
+            
 			<input type="text" placeholder="User Name" ng-model="userId" required  MaxLength="10">
 			<input type="password" placeholder="Password" ng-model="passWord"  required MaxLength="10">
 			<button type="submit" id="loginButton"  ng-click="login()">Login</button>
             
             <button type="submit" id="signUpButton"   ng-hide="disabled"  ng-click="signUp()">SignUp</button>
 		</form>
+        <label ng-model="error" style="color:red"/>
 	</div>
 	
 	<ul class="bg-bubbles">

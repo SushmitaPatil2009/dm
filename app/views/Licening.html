@@ -3,15 +3,15 @@
   <meta charset="UTF-8">
   <title>School Management</title>   
       <link rel="stylesheet" href="../styles/licenceing.css">  
-<div>
+<div ng-controller="licenseController">
   <div class="wrapper">
 	<div class="container">
 		<h1>Licence</h1>		
 		<form class="form">          
-        Product ID <input type="text" maxlength="50" placeholder=" Product ID"  >
-        Serial Key <input type="text" placeholder="Serial Key" maxlength="50">        
+        Product ID <input type="text" id="productId" ng-model="productId" maxlength="50"  disabled >
+        Serial Key <input type="text" id="serialKey" ng-model="serialKey" placeholder="Serial Key" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="50" required>        
             			<br/>
-			<button type="submit" id="signupButton"  ng-click="signUp()">Submit</button>
+			<button type="submit" id="licenseButton"  ng-click="licenseCheck()">Submit</button>
             
 		</form>
 	</div>

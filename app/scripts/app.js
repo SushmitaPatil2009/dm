@@ -15,5 +15,9 @@ $routeProvider.when("/schoolReg",{
         templateUrl : "views/schoolReg.html",
         controller :"schoolRegController"
     })
+    $routeProvider.when("/license",{
+        templateUrl : "views/licening.html",
+        controller :"licenseController"
+    })
 }]);
 

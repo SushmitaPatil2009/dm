@@ -1,10 +1,9 @@
     
  "use strict";
 app.controller("schoolRegController", ['$scope','$http','$location',function ($scope,$http,$location) {
-        var signUpUrl = "http://localhost:8080/SM/api/v1/school/signUp";
-       
-        $scope.signUp = function(){
-            console.log("Hi");
+        var signUpUrl = "http://localhost:8008/?#!/signUp";
+      
+        $scope.signUp = function(){          
             
             var jsonObject = {          
                 schoolName: $scope.schoolName,
@@ -32,22 +31,15 @@ app.controller("schoolRegController", ['$scope','$http','$location',function ($s
                 }
             },
             function(response){
-             $scope.error = response.error;   
+             $scope.error = response.error; 
+                 $location.path("/schoolReg");
             })
                 
              }
-       /* $scope.checkvalidation = function () {
-if ($scope.sta == true && $scope.stp == true && $scope.sth==true && $scope.stc==true)
-$scope.validationmsg = false;
-else if ($scope.sta == false && $scope.stp == true && $scope.sth==true && $scope.stc==true)
-$scope.validationmsg = false;
-else if ($scope.sta == true && ($scope.stp == true || $scope.sth==true || $scope.stc==true))
-$scope.validationmsg = false;
-    else
-        $scope.validationmsg = true;
-            
-            return $scope.validationmsg;
-}
-*/
-                                       
+        
+        $scope.filterValue = function($event){
+        if(isNaN(String.fromCharCode($event.keyCode))){
+            $event.preventDefault();
+        }
+};                                        
         }]);

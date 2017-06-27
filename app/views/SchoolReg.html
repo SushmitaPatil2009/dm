@@ -27,6 +27,7 @@
 
                             <div class="checkbox">
                                 <label>
+
                                     <input name="radioButtongroup" type="radio" class="ace input-lg"   ng-model="schoolType" tabindex="'1'" ng-value = "1" />
                                     <span class="lbl"> Primary</span>
                                 </label>
@@ -36,7 +37,7 @@
                                 </label>                              
                                 <label>
                                     <input name="radioButtongroup" type="radio" ng-model="schoolType" class="ace input-lg" ng-value = "'3'" tabindex="3"/>
-                                
+
                                     <span class="lbl"> Both</span>
                                 </label>
                             </div>
@@ -48,7 +49,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> School Name </label>
 
                                 <div class="col-sm-9">                                    
-                                    <input type="text" placeholder="School Name" ng-model="schoolName" class="form-control"
+                                    <input type="text" placeholder="School Name" ng-model="schoolName" class="form-control" maxlength="50"
                                            ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
@@ -57,7 +58,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> School Code </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="School Code" ng-model="schoolCode" class="form-control"
+                                    <input type="text" placeholder="School Code" ng-model="schoolCode" class="form-control" maxlength="50"
                                            ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
@@ -65,7 +66,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Address 1</label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Address 1" ng-model="addressLine1" class="form-control"
+                                    <input type="text" placeholder="Address 1" ng-model="addressLine1" class="form-control" maxlength="50"
                                            ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
@@ -73,7 +74,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Address 2 </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Address 2" ng-model="addressLine2" class="form-control"
+                                    <input type="text" placeholder="Address 2" ng-model="addressLine2" class="form-control" maxlength="50"
                                            ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
@@ -81,16 +82,16 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1">Town </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Town" ng-model="town" class="form-control"
-                                           ng-maxlength="50" ng-minlength="1" required />
+                                    <input type="text" placeholder="Town" ng-model="town" class="form-control" maxlength="50"
+                                      onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)'   ng-pattern="/[a-zA-Z]/"   ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Taluk </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Taluk" ng-model="taluk" class="form-control"
-                                           ng-maxlength="50" ng-minlength="1" required />
+                                    <input type="text" placeholder="Taluk" ng-model="taluk" class="form-control" maxlength="50"
+                                        onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)'    ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
 
@@ -98,24 +99,24 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> District </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="District" ng-model="district" class="form-control"
-                                           ng-maxlength="50" ng-minlength="1" required />
+                                    <input type="text" placeholder="District" ng-model="district" class="form-control" maxlength="50"
+                                     onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)'     ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> State </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="State" ng-model="state" class="form-control"
-                                           ng-maxlength="50" ng-minlength="1" required />
+                                    <input type="text" placeholder="State" ng-model="state" class="form-control" maxlength="50" onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 122)'  ng-pattern="/[a-zA-Z]/"
+                                      ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pin Code </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Pin Code" ng-model="pinCode" class="form-control"
-                                           ng-maxlength="50" ng-minlength="1" required />
+                                    <input type="text" placeholder="Pin Code"  ng-model="pinCode" class="form-control" maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-pattern="/[a-zA-Z]/"
+                                      ng-keypress="filterValue($event)"      ng-maxlength="6" ng-minlength="6" required />
                                 </div>
                             </div>
                             <div class="center">
