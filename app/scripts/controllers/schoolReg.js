@@ -25,7 +25,11 @@ app.controller("schoolRegController", ['$scope','$http','$location',function ($s
                 headers :{ 'Content-Type':'application/json'},
                 data : angular.toJson(jsonObject)
             }).then(function(response){
-                $scope.message = response.message;
+                $scope.message = response.data;
+                console.log('$scope.message',$scope.message);
+                if  ($scope.message.code == 200){
+                    $location.path("/login");
+                }
             },
             function(response){
              $scope.error = response.error;   

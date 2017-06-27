@@ -3,28 +3,28 @@
   <meta charset="UTF-8">
   <title>School Management</title>   
       <link rel="stylesheet" href="styles/style_login.css">  
-<div class="systemdt">
+<div class="systemdt" >
     <p>
 <script> document.write(new Date().toLocaleDateString()); </script>
 </p>
     </div>
-<div ng-controller="loginController">
+<div ng-controller="loginController" data-ng-init = "checkSchoolStatus();">
     
   <div class="wrapper">
 	<div class="container">
 		<h1>Log-In</h1>
 		
 		<form class="form">
-           <select ng-model-options="roleId"   Class="form-control" style="text-align:center;">
-                            <option Value="0" >ADMINISTRATOR</option>
-                            <option Value="1">STAFF</option>
-                            <option Value="2">STUDENT</option>
+           <select ng-model="roleId"   Class="form-control" style="text-align:center;">
+                            <option Value="1" >ADMINISTRATOR</option>
+                            <option Value="2">STAFF</option>
+                            <option Value="3">STUDENT</option>
                         </select>
 			<input type="text" placeholder="User Name" ng-model="userId" required  MaxLength="10">
 			<input type="password" placeholder="Password" ng-model="passWord"  required MaxLength="10">
 			<button type="submit" id="loginButton"  ng-click="login()">Login</button>
             
-            <button type="submit" id="signUpButton"  ng-click="signUp()">SignUp</button>
+            <button type="submit" id="signUpButton"   ng-hide="disabled"  ng-click="signUp()">SignUp</button>
 		</form>
 	</div>
 	
