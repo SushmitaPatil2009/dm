@@ -1,7 +1,7 @@
     
  "use strict";
 app.controller("schoolRegController", ['$scope','$http','$location',function ($scope,$http,$location) {
-        var signUpUrl = "http://localhost:8008/?#!/signUp";
+        var signUpUrl = "http://localhost:8080/SM/api/v1/school/signUp";
       
         $scope.signUp = function(){          
             

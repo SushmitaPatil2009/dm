@@ -4,7 +4,7 @@
 app.controller('dashBoardController'['$scope','$http','$location',function ($scope,$http,$location) {
     $scope.print = "WelCome to Nest";
     
-    $scope.createStaff = function(){
+    /*$scope.createStaff = function(){
     var jsonObject = {
         userId: $scope.userId,
         passWord: $scope.passWord,
@@ -29,6 +29,6 @@ app.controller('dashBoardController'['$scope','$http','$location',function ($sco
      alert($scope.error ,".Please enter correct input");
     })
 }
-}
+}*/
 
 }])
