@@ -37,20 +37,5 @@ app.controller("schoolRegController", ['$scope','$http','$location',function ($s
         if(isNaN(String.fromCharCode($event.keyCode))){
             $event.preventDefault();
         }
-};  
-    
-    /* $scope.checkvalidation = function () {
-if ($scope.sta == true && $scope.stp == true && $scope.sth==true && $scope.stc==true)
-$scope.validationmsg = false;
-else if ($scope.sta == false && $scope.stp == true && $scope.sth==true && $scope.stc==true)
-$scope.validationmsg = false;
-else if ($scope.sta == true && ($scope.stp == true || $scope.sth==true || $scope.stc==true))
-$scope.validationmsg = false;
-    else
-        $scope.validationmsg = true;
-            
-            return $scope.validationmsg;
-}
-*/
-                                       
+};                                        
         }]);

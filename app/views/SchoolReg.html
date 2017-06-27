@@ -105,7 +105,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> State </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="State" ng-model="state" class="form-control" maxlength="50" onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)'  ng-pattern="/[a-zA-Z]/"
+                                    <input type="text" placeholder="State" ng-model="state" class="form-control" maxlength="50" onkeypress='return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 122)'  ng-pattern="/[a-zA-Z]/"
                                       ng-maxlength="50" ng-minlength="1" required />
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pin Code </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Pin Code"  ng-model="pinCode" class="form-control" maxlength="6"onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-pattern="/[a-zA-Z]/"
+                                    <input type="text" placeholder="Pin Code"  ng-model="pinCode" class="form-control" maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-pattern="/[a-zA-Z]/"
                                       ng-keypress="filterValue($event)"      ng-maxlength="6" ng-minlength="6" required />
                                 </div>
                             </div>

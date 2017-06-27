@@ -2,14 +2,16 @@
  "use strict";
 app.controller("loginController", ['$scope','$http','$location',function ($scope,$http,$location) {
             $scope.message = "Hey done with integration with angular.";
-        var loginUrl = "http://localhost:8008/?#!/login";
-       
+        var loginUrl = "http://localhost:8080/SM/api/v1/login";
+
+   
+    
    if($scope.userId!='' && $scope.passWord!=''){
         $scope.login = function(){
             var jsonObject = {
                 userId: $scope.userId,
                 passWord: $scope.passWord,
-                roleId: $scope.roleId
+                roleId: $scope.roleId.id
             };
 
             $http({
@@ -26,13 +28,19 @@ app.controller("loginController", ['$scope','$http','$location',function ($scope
             },
             function(response){               
              $scope.error = response.data.message;   
-             console.log("response.error ",$scope.error);
+             
              alert($scope.error ,".Please enter correct input");
             })
         }
    }
            
-        
+    $scope.roleItemlist = [{name:'ADMINISTRATOR',id:1},{name:'STAFF',id:2},{name:'STUDENT',id:3} ];
+                                                                                        
+        $scope.roleId = $scope.roleItemlist[0];
+    
+    
+                                                                                        
+                                                                                        
         $scope.signUp=function(){
              $location.path("/schoolReg");
         }
