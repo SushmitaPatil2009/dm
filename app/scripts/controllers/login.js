@@ -11,7 +11,7 @@ app.controller("loginController", ['$scope', '$http', '$location', function ($sc
             var jsonObject = {
                 userId: $scope.userId,
                 passWord: $scope.passWord,
-                roleId: $scope.roleId
+                roleId: 1//$scope.roleId
             };
 
             $http({

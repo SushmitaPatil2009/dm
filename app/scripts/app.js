@@ -8,7 +8,7 @@ app.config(['$routeProvider',function ($routeProvider) {
         controller :"loginController"
     })
     $routeProvider.when("/dashBoard",{
-        templateUrl : "views/dashboard.html",
+        templateUrl : "views/dashBoard.html",
         controller :"dashBoardController"
     })
 $routeProvider.when("/schoolReg",{
@@ -16,8 +16,12 @@ $routeProvider.when("/schoolReg",{
         controller :"schoolRegController"
     })
     $routeProvider.when("/license",{
-        templateUrl : "views/licening.html",
+        templateUrl : "views/license.html",
         controller :"licenseController"
+    })
+     $routeProvider.when("/staffCreation",{
+        templateUrl : "views/staffEntry.html",
+        //controller :"staffCreationController"
     })
 }]);
 

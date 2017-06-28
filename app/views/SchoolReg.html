@@ -115,8 +115,7 @@
                                 <label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Pin Code </label>
 
                                 <div class="col-sm-9">
-                                    <input type="text" placeholder="Pin Code"  ng-model="pinCode" class="form-control" maxlength="6" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-pattern="/[a-zA-Z]/"
-                                      ng-keypress="filterValue($event)"      ng-maxlength="6" ng-minlength="6" required />
+                                    <input type="text" placeholder="Pin Code"  ng-model="pinCode" class="form-control" ng-maxlength="6" ng-minlength="6" required />
                                 </div>
                             </div>
                             <div class="center">
